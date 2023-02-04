@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Securly Classroom Teacher Video Call</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+    <link rel="styleSheet" href="../blocking/screenlock.css" type="text/css" media="screen">
+    <link rel="styleSheet" href="style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="openvidu-webcomponent-2.23.1.css">
+    <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAARJJREFUeNqkU9ENgjAQbQ0D8M0XI8gGsIEj4ARKGIA4AGEEcQJ1At0ANrBffLOB3rUPrI2gxiYXrte7d+9eqRB/LinybknflRPvyU6iDJTe5V2IHN/JO3k4KN6AV1SYoaiYYuCNXhnI0TcdK5juRJaNjEzOnT+Lt7AmcY1Reu3bxdZaTKpTBlzYajO++A3ALJ4/JLrxZw1e599A3BDRC8UjYtLOM8g7Fu1GtgV91iGx2HxkwIXXF9EMqADgjAZ550Nx4SiektVTQjLAkNyA5sECTRE7O6MOoiqJzg0EY+o1xfborBC/Oo1jnEUSiEcEE9xAipmn7l/hz+wHEXcAaLDnmdffvcbnXMOrVHqML9dDgAEAztNW9xS2FLQAAAAASUVORK5CYII=" rel="icon" type="image/x-icon"/>
+    <script src="call.js"></script>
+<!--    <script src="debugWebRtc.js"></script>-->
+    <script src='openvidu-webcomponent-2.23.1.js'></script>
+</head>
+
+<body>
+
+<div id="tpAnnouncementCover" class="tpMsgCover">
+    <div class="tpPopup">
+        <div>
+            <table>
+                <tr>
+                    <td class="tpTdAlign">
+                        <div class="tpPopupHeader">
+                            <div class="tpHeaderWrapper tpWidth100">
+                                <div id="tpPopupTitle" class="tpPopupTitle">Teacher Video Call</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr style="background-color: unset;">
+                    <td class="tpMessage">
+                        <div id="tpAnnouncementMessage" class="tpVideoArea">
+                            <div id="tpVideoOuterContainer" class="container">
+                                <div id="tpSessionOverMessage" class="tpPopupTitle tpTxtCenter" style="display: none">Teacher video call ended<br/>
+                                    You can close the tab
+                                </div>
+                                <div id="session">
+                                    <openvidu-webcomponent
+                                            prejoin="false"
+                                            toolbar-fullscreen-button="true"
+                                            toolbar-display-logo="false"
+                                            style="height: 80vh; width: 70vw; display: none;"></openvidu-webcomponent>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
