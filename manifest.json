@@ -1,0 +1,52 @@
+{
+  "manifest_version": 2,
+  "name": "Securly Classroom",
+  "short_name": "Securly",
+  "minimum_chrome_version": "24.0.1307.0",
+  "version": "1.20.03",
+  "update_url": "https://deviceconsole.securly.com/dist/chrome/n.xml",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuG+tf4hVUABclvk7dx0Bu7qNZb4hVZNSCn+E0gGqloYmL12TQWrt4/nBNqFf/oyg8+E8sTZzlt4lrF8150a5ZC8usMI5sq4yhKZgLHLXlx/hQhcLvPtgqCj+oFpAxLKmgO59+B47lWgpp1ctN8CedUJbFOmnIaIV/4lhfQbLpiB2OfrIi3k22x1MoIuneoQPKx7ddYEPeVhra6ifoi35pjh3o1xkVNdGA57jNCOhNzE2WocqRO1pkCvYe1skQXyoR0sLqWVpcpaPgClhifmP1Sm4RfVpmYJdPWQn0RcZGQWiKo6GawV5QwwruW2xn4xlzWG53+rTipLPrk4+o/M2WQIDAQAB",
+  "icons": {
+    "16": "logo16mono.png",
+    "48": "logo48.png",
+    "128": "logo128.png"
+  },
+  "background": {
+    "scripts": ["c.js","f.js","lo.js"]
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "logo16mono.png",
+      "48": "logo48.png",
+      "128": "logo128.png"
+    },
+    "default_title": "Securly Classroom"
+  },
+  "permissions": [
+    "<all_urls>",
+    "*://*/*",
+    "activeTab",
+    "alarms",
+    "declarativeNetRequest",
+    "enterprise.deviceAttributes",
+    "gcm",
+    "geolocation",
+    "identity",
+    "identity.email",
+    "idle",
+    "nativeMessaging",
+    "notifications",
+    "storage",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "content_security_policy": "script-src 'self' object-src 'self'",
+  "externally_connectable": {
+    "ids": ["*"]
+  },
+  "web_accessible_resources": [
+    "*",
+    "blocking/*",
+    "fonts/*"
+  ]
+}

@@ -1,0 +1,118 @@
+:root {
+    --s-bg-color: #fafbfc;
+    --s-font-color: #637484;
+    --s-head-color: #454f5b;
+    --s-button-primary-color: #0096ff;
+    --s-button-primary-hover-color: #007bd1;
+    --s-button-primary-pressed-color: #0060a3;
+    --s-button-disabled-color: #bae2fe;
+    --s-border-color: #becbda;
+}
+
+@font-face {
+    font-family: 'Metropolis SemiBold';
+    src:  url('https://deviceconsole.securly.com/fonts/Metropolis-SemiBold.woff2') format('woff2'),
+    url('https://deviceconsole.securly.com/fonts/Metropolis-Semibold.woff') format('woff');
+}
+
+body {
+    font-family: 'Metropolis SemiBold', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    background-color: var(--s-bg-color);
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td {
+    padding: 0;
+    vertical-align: top;
+    text-align: center;
+    width: 260px;
+}
+
+.Popup {
+    border-top-width: 1px;
+    /*border-width: 1px 3px 3px;*/
+    border-top-color: lightgray;
+    border-top-style: solid;
+    background-color: white;
+    /*box-shadow:0 4px 8px 0 rgba(0,0,0,0.4),0 6px 20px 0 rgba(0,0,0,0.2);*/
+    display: inline-block;
+}
+.Popup-Dialog-Header {
+    background-color: #becbda;
+    color: #76889b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+}
+.Popup-Name {
+    font-weight: bold;
+    font-size: 16px;
+    margin: auto;
+    white-space: nowrap;
+    display: table-cell;
+}
+.Popup-Content {
+    padding: 10px 10px 0 10px;
+    font-size: 11px;
+    color: var(--s-font-color);
+}
+.btn-container {
+    outline: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.tpBtn {
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-radius: 22px;
+    /*border: 1px solid transparent;*/
+    font-size: 1em;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    line-height: 1.65;
+    user-select: none;
+    overflow: visible;
+    box-sizing: border-box;
+
+    background-color: var(--s-button-primary-color);
+    border-color: var(--s-button-primary-color);
+}
+
+.tpBtn:hover {
+    background-color: var(--s-button-primary-hover-color);
+    border-color: var(--s-button-primary-hover-color);
+}
+
+.tpBtn:active {
+    background-color: var(--s-button-primary-pressed-color);
+    border-color: var(--s-button-primary-pressed-color);
+}
+
+.disabled .tpBtn {
+    background-color: var(--s-button-disabled-color);
+    border-color: var(--s-button-disabled-color);
+}
+
+.disabled .tpBtn:hover {
+    background-color: var(--s-button-disabled-color);
+    border-color: var(--s-button-disabled-color);
+}
+
+.disabled .tpBtn:active {
+    background-color: var(--s-button-disabled-color);
+    border-color: var(--s-button-disabled-color);
+}
+
