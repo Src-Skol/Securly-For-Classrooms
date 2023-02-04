@@ -1,0 +1,80 @@
+<div id="tpScreenLockCover" class="tpCover tpDivCvr" style="display: none;">
+    <div>
+        <img id="tp_blk_icon" alt="Lock sign" class="tpExclamSign" src="blocked.png">
+        <div class="tpBlkMsg">
+            <div id="blocked_message" class="tpMsgTxt">This content has been blocked by your administrator</div>
+        </div>
+    </div>
+</div>
+<div id="tpAnnouncementCover" class="tpMsgCover" style="display: none;">
+    <div class="tpPopup">
+        <div>
+            <table id="tpMsgTable" style="display: none;">
+                <tr>
+                    <td class="tpTdAlign">
+                        <div class="tpPopupHeader">
+                            <div class="tpHeaderWrapper tpWidth100">
+                                <div id="tpPopupTitle" class="tpPopupTitle">Message from your teacher</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr style="background-color: unset;">
+                    <td class="tpMessage">
+                        <div id="tpAnnouncementMessage" class="tpMessage">&nbsp;</div>
+                        <div id="tpOkButton" class="tpBtn primary">OK</div>
+                    </td>
+                </tr>
+            </table>
+            <table id="tpConfirmTable" style="display: none;">
+                <tr>
+                    <td class="tpTdAlign">
+                        <div class="tpPopupHeader">
+                            <div class="tpHeaderWrapper tpWidth100">
+                                <div id="tpRequestConfimTitle" class="tpPopupTitle">Requesting screen sharing</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr style="background-color: unset;">
+                    <td class="tpMessage">
+                        <div id="tpRequestConfimMessage" class="tpScreenShare">
+                            Your teacher wants to share your screen<br/>
+                            Click OK to continue, or cancel to deny the request</div>
+                        <div class="tpBtnRow">
+                            <div id="tpAgreeButton" class="tpBtn primary">OK</div>
+                            <div id="tpRejectButton" class="tpBtn cancel">Cancel</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="tpMovableIcon" class="icofont default initial">
+    addcomment
+</div>
+<div id="chatPanel">
+    <div class="tpContent">
+        <div class="chat">
+            <div class="tpPopupHeader">
+                <div class="tpHeaderWrapper">
+                    <div class="tpPopupTitle">Chat with your teacher</div>
+                </div>
+                <div id="tpCloseBtn" class="btnContainer">
+                    <div class="btnIcon">
+                        <div class="icofont">cross</div>
+                    </div>
+                </div>
+            </div>
+            <div class="historyTimeline flex flexGroup bottomBorder">
+                <div  id="tpMessageList" class="messageList">
+                </div>
+            </div>
+            <div class="chatMessage">
+                <textarea data-meteor-emoji="true" id="tpText" placeholder="Type your message"></textarea>
+                <div id="tpSendButton" class="tpBtn primary tpFloatRight">Send</div>
+            </div>
+        </div>
+    </div>
+</div>
